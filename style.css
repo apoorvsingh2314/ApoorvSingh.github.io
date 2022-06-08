@@ -475,3 +475,64 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+.portfolio__img {
+    width: 540px;
+    height: 252px;
+}
+
+.about-me__body {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.info {
+    padding-right: 2em;
+}
+
+.about-me__img {
+    margin-top: -8em;
+    margin-right: 2em;
+    width: 400px;
+}
+
+@media screen and (max-width:600px) {
+
+    .about-me__body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10em;
+    }
+
+    .about-me__img {
+        display: block;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-device-width: 601px) and (max-device-width: 1000px) {
+
+    .about-me__body {
+        display: block;
+    }
+
+    .about-me__img {
+        width: 40%;
+        height: 500px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 1em;
+        float: right;
+    }
+
+}
