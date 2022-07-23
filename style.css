@@ -504,8 +504,21 @@ header {
     margin-top: -10em;
 }
 
-#cv:hover{
-    transform: var(--fw-reg);
+.Contact_us a:hover{
+    opacity: .7;
+}
+
+
+@media screen and (max-width:600px) {
+
+    .Contact_us{
+        display: block;
+    }
+    
+    .Contact_us h3{
+        margin-bottom: 1em;
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -544,5 +557,4 @@ header {
         margin-left: 1em;
         float: right;
     }
-
 }
