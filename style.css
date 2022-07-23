@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -397,38 +396,21 @@ header {
 
 /* My Work */
 
+.work_title{
+    text-align: center;
+}
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;
+    
 }
 
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+.item_name{
+    text-align: left;
+
 }
 
-.portfolio__item {
-    background: var(--clr-accent);
-    overflow: hidden;
-}
-
-.portfolio__img {
-    transition:
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
-}
-
-.portfolio__item:focus {
-    position: relative;
-    z-index: 2;
-}
-
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
-}
 
 
 /* footer */
@@ -446,6 +428,7 @@ header {
     color: inherit;
     text-decoration: none;
 }
+
 
 .footer__link {
     font-weight: var(--fw-bold);
@@ -494,6 +477,32 @@ header {
     margin-top: -8em;
     margin-right: 2em;
     width: 400px;
+}
+
+.Contact_us{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Contact_us a{
+   margin-top: -.5em ;
+}
+#cv{
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: 200ms ease-in-out;
+    margin-left: 1em;
+    margin-top: -10em;
+
 }
 
 @media screen and (max-width:600px) {
